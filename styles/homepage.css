@@ -1,0 +1,227 @@
+:root {
+--primary-color: #000000;
+--secondary-color: #FFFFFF;
+--tertiary-blue-color: #0b25c6;
+--tertiary-grey-color: #ccc8c0 ;
+--primary-padding: 50px;
+}
+
+* {
+  box-sizing: border-box;
+  }
+
+html {
+  font-size: 12px;
+  font-family: sans-serif;
+  height: 100vh;
+  }
+   
+body {
+  background-color:var(--secondary-color);
+  margin: 0px;  
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  }
+
+.header-background {
+  margin-bottom: var(--primary-padding);
+  }
+
+.video-area {
+  width:100%;
+  font-size: 0;
+  }
+
+video{
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  }
+
+.product-area-homepage{
+  padding-bottom: 0; 
+  }
+
+.product-homepage {
+  cursor: pointer;
+}
+  
+.pos-img-grid {
+  display: grid;
+  grid-template: 5fr 5fr / 5fr 5fr;
+  }
+
+.pos-img {
+  position: relative;
+  text-align: center;
+  color: white;
+  cursor: pointer
+  }
+
+.pos-img-img {
+  display: block;
+  }
+
+.pos-img-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--secondary-color);
+  font-size: 3rem;
+  font-weight: bold;
+  width: 70%;
+  }
+
+p.pos-img-text {
+  color: var(--primary-color);
+  width: 100%;
+  padding: 40px;
+  top: 40%;
+  }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--tertiary-blue-color);
+  }
+
+.scrunchie{
+  background-image: url(../resources/content/haceli_scrunchie_photobooth_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }  
+
+.barette-stilleben {
+  background-image: url(../resources/content/Barrete_white_black_content_2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.barette {
+  background-image: url(../resources/content/hacéli-barette.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  }
+
+.pos-img:hover .overlay {
+  opacity: 1;
+  transition: .5s;
+  }
+
+.pos-img:hover .barette {
+  opacity: 1;
+  transition: .5s;
+  }
+
+.pos-img:hover .barette-stilleben {
+  opacity: 1;
+  transition: .5s;
+  }
+
+.pos-img:hover .scrunchie {
+  opacity: 1;
+  transition: .5s;
+  }
+
+.text {
+  color: var(--secondary-color);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  width: 70%;
+  }
+
+.grid-news {
+  display: grid;
+  grid-template: 10fr / 5fr 5fr;
+  gap: 3px;
+  padding-top: 20px;
+  }
+
+.news-text-block{
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+
+p.news-text {
+  color: var(--primary-color);
+  width: 100%;
+  padding: 20px 40px;
+  margin: 0;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-weight: bold;
+  position: relative;
+  }
+
+.news-img {
+  position: relative;
+  text-align: center;
+  color: white;
+  }
+
+@media screen and (min-width: 960px) {
+  .text {
+    font-size: 4rem;
+    }  
+
+  .pos-img-text {
+    font-size: 4rem;
+    }
+
+  p.news-text {
+    font-size: 4rem;
+    }
+}
+
+
+@media screen and (max-width: 875px) {
+  .one-third-three{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .pos-img-grid {
+    grid-template: 10fr / 10fr;
+    padding: 20px;
+    gap: 20px; 
+    }
+
+  .grid-news {
+    grid-template: 10fr / 10fr;
+    gap: 40px;
+    }
+
+  p.news-text {
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    }
+}
+
+  
+

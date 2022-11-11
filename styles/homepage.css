@@ -8,7 +8,7 @@
 
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: lato;
   }
 
 html {
@@ -124,7 +124,7 @@ video{
 p.news-text {
   color: var(--primary-color);
   font-family: serif;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
   left: 50%;
   margin: 0;
@@ -142,12 +142,8 @@ p.news-text {
   }
 
 @media screen and (min-width: 960px) {
-  .pos-img-text, .text-img {
+  .pos-img-text, .text-img, p.news-text {
     font-size: 5rem;
-    }
-
-  p.news-text {
-    font-size: 4rem;
     }
 }
 

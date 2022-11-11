@@ -9,7 +9,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: lato;
 
     }
 
@@ -43,10 +43,9 @@ body {
 .artikel-standard{
     background-color: transparent ;
     color: #000000;
-    font-size: 14px; 
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 100;
-    line-height: 2;   
+    line-height: 1.8;   
     }
 
 .titel-standard{
@@ -54,13 +53,10 @@ body {
   text-transform: uppercase;
   }
 
-p .artikel-standard{
-    letter-spacing: 0.2rem; 
-}
-
 .subtitel-standard{
     margin-top: 50px;
     text-transform: uppercase;
+    font-weight: 400;
 }
 
 .standard-list {

@@ -3,11 +3,12 @@
     --secondary-color: #ffffff;
     --tertiary-blue-color: #0b25c6;
     --tertiary-grey-color: #ccc8c0  ;
-    --primary-padding: 55px;
+    --primary-padding: 50px;
     }
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
     }
 
 html {
@@ -18,9 +19,8 @@ html {
 body {
     background-color:var(--secondary-color);
     display: flex;
-    height: 100%;
-    font-family:Georgia, 'Times New Roman', Times, serif; 
     flex-direction: column;
-    margin: 0px;  
     flex-grow: 1;
+    height: 100%;
+    margin: 0px;  
     }

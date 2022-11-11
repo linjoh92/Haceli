@@ -8,21 +8,21 @@
 
 * {
   box-sizing: border-box;
+  font-family: sans-serif;
   }
 
 html {
   font-size: 12px;
-  font-family: sans-serif;
   height: 100vh;
   }
    
 body {
   background-color:var(--secondary-color);
-  margin: 0px;  
-  width: 100vw;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  margin: 0px;  
+  width: 100vw;
   }
 
 .header-background {
@@ -30,14 +30,14 @@ body {
   }
 
 .video-area {
-  width:100%;
   font-size: 0;
+  width:100%;
   }
 
 video{
+  height:100%;
   object-fit: cover;
   width:100%;
-  height:100%;
   }
 
 .product-area-homepage{
@@ -46,7 +46,7 @@ video{
 
 .product-homepage {
   cursor: pointer;
-}
+  }
   
 .pos-img-grid {
   display: grid;
@@ -54,66 +54,53 @@ video{
   }
 
 .pos-img {
+  color: var(--secondary-color);
+  cursor: pointer;
   position: relative;
   text-align: center;
-  color: white;
-  cursor: pointer
   }
 
 .pos-img-img {
   display: block;
   }
 
-.pos-img-text {
+.pos-img-text, .text-img {
+  color: var(--secondary-color);
+  font-family: serif;
+  font-size: 4rem;
+  font-weight: bold;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
-  color: var(--secondary-color);
-  font-size: 3rem;
-  font-weight: bold;
   width: 70%;
   }
 
-p.pos-img-text {
-  color: var(--primary-color);
-  width: 100%;
-  padding: 40px;
-  top: 40%;
-  }
-
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
   background-color: var(--tertiary-blue-color);
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .5s ease;
+  width: 100%;
   }
 
 .scrunchie{
   background-image: url(../resources/content/haceli_scrunchie_photobooth_2.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   }  
-
-.barette-stilleben {
-  background-image: url(../resources/content/Barrete_white_black_content_2.jpeg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  }
 
 .barette {
   background-image: url(../resources/content/hacéli-barette.jpeg);
+  }
+
+.pos-img-position{
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   }
 
 .pos-img:hover .overlay {
@@ -121,82 +108,48 @@ p.pos-img-text {
   transition: .5s;
   }
 
-.pos-img:hover .barette {
-  opacity: 1;
-  transition: .5s;
-  }
-
-.pos-img:hover .barette-stilleben {
-  opacity: 1;
-  transition: .5s;
-  }
-
-.pos-img:hover .scrunchie {
-  opacity: 1;
-  transition: .5s;
-  }
-
-.text {
-  color: var(--secondary-color);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size: 3rem;
-  font-weight: bold;
-  width: 70%;
-  }
-
 .grid-news {
   display: grid;
-  grid-template: 10fr / 5fr 5fr;
   gap: 3px;
+  grid-template: 10fr / 5fr 5fr;
   padding-top: 20px;
   }
 
 .news-text-block{
+  color: var(--secondary-color);
   position: relative;
   text-align: center;
-  color: white;
   }
 
 p.news-text {
   color: var(--primary-color);
-  width: 100%;
-  padding: 20px 40px;
-  margin: 0;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: serif;
   font-size: 3rem;
   font-weight: bold;
+  left: 50%;
+  margin: 0;
+  padding: 20px 40px;
   position: relative;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 100%;
   }
 
 .news-img {
+  color: var(--secondary-color);
   position: relative;
   text-align: center;
-  color: white;
   }
 
 @media screen and (min-width: 960px) {
-  .text {
-    font-size: 4rem;
-    }  
-
-  .pos-img-text {
-    font-size: 4rem;
+  .pos-img-text, .text-img {
+    font-size: 5rem;
     }
 
   p.news-text {
     font-size: 4rem;
     }
 }
-
 
 @media screen and (max-width: 875px) {
   .one-third-three{
@@ -206,19 +159,19 @@ p.news-text {
 
 @media screen and (max-width: 620px) {
   .pos-img-grid {
+    gap: 20px; 
     grid-template: 10fr / 10fr;
     padding: 20px;
-    gap: 20px; 
     }
 
   .grid-news {
-    grid-template: 10fr / 10fr;
     gap: 40px;
+    grid-template: 10fr / 10fr;
     }
 
   p.news-text {
-    top: 0;
     left: 0;
+    top: 0;
     transform: translate(0);
     }
 }

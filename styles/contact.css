@@ -2,12 +2,15 @@
     --primary-color: #000000;
     --secondary-color: #ffffff;
     --tertiary-blue-color: #0b25c6;
-    --tertiary-grey-color: #ccc8c0  ;
-    --primary-padding: 55px;
+    --tertiary-grey-color: #ccc8c0;
+    --tertiary-light-grey-color: #f8f8f8;
+    --primary-padding: 50px;
+    --primary-height: 61.5px;
     }
 
 * {
     box-sizing: border-box;
+    font-family: sans-serif;
     }
 
 html {
@@ -16,49 +19,36 @@ html {
     }
 
 body {
-    background-color:var(--secondary-color);
+    background-color:var(--tertiary-light-grey-color);
     display: flex;
     flex-direction: column;
-    margin: 0px;  
     flex-grow: 1;
+    margin: 0px;  
     }
 
-
-.hero{
+.contact-container {
     display: flex;
-    min-height: 350px;
-    background-image: url(../resources/content/Haceli-strunchie-pia.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
+    justify-content: center;
     }
 
-.hero-text{
-    align-items: center;
-    display: flex;
-    width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    }
-
-.heading {
-    color: var(--secondary-color);
-    font-size: 2.5rem;
-    font-weight: 500;
-    }
-
-main.contact-grid {
+.contact-grid {
     background-color: var(--secondary-color);
     flex-grow: 1;
-    margin: 80px 0;
+    margin-top: var(--primary-height);
+    max-width: 720px;
+    padding: 60px 120px;
     } 
 
-.rubrik-contact-form {
+.titel-contact{
+    font-size: 2rem;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    }
+
+.rubrik-contact-form {
     letter-spacing: 0.1rem;
-    font-family: sans-serif;
+    margin-bottom: 10px;
+    text-transform: uppercase;
     }
 
 form.contact-form {
@@ -66,11 +56,10 @@ form.contact-form {
     }
 
 fieldset.contact-fieldset{
-    display: block;  
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
     border: none;
+    display: block;  
+    margin-bottom: 50px;
+    padding: 0;
     }
 
 
@@ -79,88 +68,73 @@ input {
     display: block;
     }
 
-input,
+.contact-input,
 textarea,
 .topic {
     margin-bottom: 50px;
     }   
 
 textarea.description-contact{
-    width: 100%;
-    resize: vertical;
+    min-height: 200px;
     outline: none;    
-    min-height: 120px;
+    resize: vertical;
+    width: 100%;
     }
 
 .topic{
     background-color: transparent;
+    border-radius: 2px;
     font-size: 1rem;
-    height: 44px;
-    text-transform: uppercase;
     font-weight: bold;
     height: 44px;
-    width: 100%;
+    height: 44px;
     outline: none;    
     padding: 10px;
-    border-radius: 2px;
+    text-transform: uppercase;
+    width: 100%;
     }
 
 .contact-input{
     background-color: transparent;
     border:none;
-    border-bottom: 1px solid black;
-    font-size: 1rem;
-    width: 100%;
-    padding: 10px;
+    border-bottom: 1px solid var(--primary-color);
     outline: none;
+    width: 100%;
     }
-
 
 button.submit{
     background-color: var(--primary-color);
     border-radius: 2px;
+    border: none;
     color: var(--secondary-color);
     font-size: 1.1rem;
-    padding: 10px;
-    width: 194px;
-    height: 44px;
     font-weight: 900;
-    border: none;
+    height: 44px;
+    padding: 10px;
+    text-transform: uppercase;
+    width: 194px;
     }
 
 button.submit:hover {
     background-color: var(--tertiary-blue-color);
     }
 
-
-@media screen and (max-width: 960px) {
-
-fieldset.contact-fieldset,
-.hero-text{
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    @media screen and (max-width: 874px) {
+        .contact-grid {
+            padding: 60px 50px;
+            }
     }
-
-}
     
+    @media screen and (max-width: 620px) {
+        .contact-grid {
+            padding: 60px 20px;
+            }
 
-@media screen and (max-width: 620px) {
-
-.hero-text {
-    margin: 0 15px;
+        button.submit {
+        width: 100%;
+        }
     }
 
-main.contact-grid {
-    margin: 50px 15px; 
-    } 
-    
-button.submit {
-    width: 100%;
-    }
 
-}
-
-         
 
            

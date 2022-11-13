@@ -59,6 +59,10 @@ body {
     font-weight: 400;
 }
 
+.subtitel-italic{
+    font-style: italic;
+}
+
 .standard-list {
     font-size: 12px;
 }

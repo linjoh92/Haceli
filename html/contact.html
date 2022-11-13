@@ -11,109 +11,103 @@
       <link rel="stylesheet" type="text/css" href="../styles/navbar.css">
    </head>
 
-<body>
-      
-   <header>
-      <div class="topnav">
-         <div class="logo-topnav">
-            <a href="index.html"><img src="../resources/haceli-logo/haceli_logo.svg"width="100px"></a>
-         </div>
-
-         <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
-         <label class="hamburger-container" for="hamburger-btn"><span class="hamburger-icon"></span></label>
-
-         <div class="menu-topnav">
-            <div class="topnav-left">
-               <a class="products-hover" href="products.html">products</a>  
-               <ul class="sub-menu">
-                  <li class="product-list"><a href="../html/products.html">barrettes</a></li>
-                  <li class="product-list"><a href="../html/products.html">scarves</a></li>
-                  <li class="product-list"><a href="../html/products.html">srunchies</a></li>
-               </ul>
-               <a href="new-arrivals.html">new arrivals</a>
+   <body>     
+      <header>
+         <div class="topnav">
+            <div class="logo-topnav">
+               <a href="index.html"><img src="../resources/haceli-logo/haceli_logo.svg"width="100px"></a>
             </div>
-            <div class="topnav-right">
-               <a class="active" href="contact.html">contact</a>
-               <ul class="sub-menu">
-                  <li><a href="../html/terms-conditions.html">terms & conditions</a></li>
-                  <li><a href="../html/privacy-policy.html">privacy policy</a></li>
-               </ul>  
-            </div>
-         </div>
-         <input class="search-btn" type="checkbox" id="search-icon">   
-         <label for="search-icon"><span class="searchicon-topnav"></span></label>   
-         <div class="drop-search">
-            <form class="search-from" action="javascript:alert('Sorry, nothing found ♡')">    
-               <div class="search-bar">
-                  <input type="text" class="searchTerm" name="search" placeholder="SEARCH..">
-                  <input class="search-btn" type="checkbox" id="search-icon">   
-                  <label class="search-icon" for="search-icon"><span class="closeicon"></span></label>    
+
+            <input class="hamburger-btn" type="checkbox" id="hamburger-btn" />
+            <label class="hamburger-container" for="hamburger-btn"><span class="hamburger-icon"></span></label>
+
+            <div class="menu-topnav">
+               <div class="topnav-left">
+                  <a class="products-hover" href="products.html">products</a>  
+                  <ul class="sub-menu">
+                     <li class="product-list"><a href="../html/products.html">barrettes</a></li>
+                     <li class="product-list"><a href="../html/products.html">scarves</a></li>
+                     <li class="product-list"><a href="../html/products.html">srunchies</a></li>
+                  </ul>
+                  <a href="new-arrivals.html">new arrivals</a>
                </div>
+               <div class="topnav-right">
+                  <a class="active" href="contact.html">contact</a> 
+               </div>
+            </div>
+
+            <input class="search-btn" type="checkbox" id="search-icon">   
+            <label for="search-icon"><span class="searchicon-topnav"></span></label>   
+            <div class="drop-search">
+               <form class="search-from" action="javascript:alert('Sorry, nothing found ♡')">    
+                  <div class="search-bar">
+                     <input type="text" class="searchTerm" name="search" placeholder="SEARCH..">
+                     <input class="search-btn" type="checkbox" id="search-icon">   
+                     <label class="search-icon" for="search-icon"><span class="closeicon"></span></label>    
+                  </div>
+               </form>
+            </div>
+         </div>     
+      </header>
+
+      <main class="contact-container">
+         <div class="contact-grid">  
+            <h1 class="titel-contact">get in touch</h1>
+            <form class="contact-form" action="mailto:linnjdesign@gmail.com" method="post" enctype="text/plain">
+               <fieldset class="contact-fieldset">
+
+                  <label class="rubrik-contact-form" for="topic">topic</label>
+                     <select name="topic" required data-name="topic" class="topic">
+                        <option value="-">-</option>
+                        <option value="Exchange-Returns">Exchange & Returns</option>
+                        <option value="Product-Support">Product Support</option>
+                        <option value="Shipping-Tracking-Delivery">Shipping, Tracking & Delivery</option>
+                        <option value="other">Other</option>
+                     </select>
+
+                  <label class="rubrik-contact-form" for="email">your email adress</label>
+                  <input class="contact-input" type="text" id="email" name="email" required data-name="email">
+
+                  <label class="rubrik-contact-form" for="messege">description</label>
+                  <textarea class="description-contact" id="messege" name="messege" cols="20" rows="5" required data-name="messege"></textarea>
+
+                  <div class="button-contact-form">
+                     <button class="submit">submit</button>
+                  </div>
+
+               </fieldset>
             </form>
          </div>
-      </div>     
-   </header>
+      </main>
 
-   <main class="contact-container">
-      <div class="contact-grid">  
-         <h1 class="titel-contact">get in touch</h1>
-         <form class="contact-form" action="mailto:linnjdesign@gmail.com" method="post" enctype="text/plain">
-            <fieldset class="contact-fieldset">
-
-               <label class="rubrik-contact-form" for="topic">topic</label>
-                  <select name="topic" required data-name="topic" class="topic">
-                     <option value="-">-</option>
-                     <option value="Exchange-Returns">Exchange & Returns</option>
-                     <option value="Product-Support">Product Support</option>
-                     <option value="Shipping-Tracking-Delivery">Shipping, Tracking & Delivery</option>
-                     <option value="other">Other</option>
-                  </select>
-
-               <label class="rubrik-contact-form" for="email">your email adress</label>
-               <input class="contact-input" type="text" id="email" name="email" required data-name="email">
-
-               <label class="rubrik-contact-form" for="messege">description</label>
-               <textarea class="description-contact" id="messege" name="messege" cols="20" rows="5" required data-name="messege"></textarea>
-
-               <div class="button-contact-form">
-                  <button class="submit">submit</button>
-               </div>
-
+      <footer>   
+         <form action="mailto:linnjdesign@gmail.com" method="post" enctype="text/plain">
+            <fieldset class="sign-up-fieldset">
+               <legend class="sign-up">be the first to know. sign up and get 10% off your first order</legend>
+               <input class="sign-up-input" type="text" id="first-name" name="first-name" placeholder="FIRST NAME" required data-name="first-name">
+               <input class="sign-up-input" type="text" id="email" name="email" placeholder="YOUR E-MAL" required data-name="email">
+               <button class="add-me">add me</button>
             </fieldset>
          </form>
-      </div>
-   </main>
 
-   <footer>   
-      <form action="mailto:linnjdesign@gmail.com" method="post" enctype="text/plain">
-         <fieldset class="sign-up-fieldset">
-            <legend class="sign-up">be the first to know. sign up and get 10% off your first order</legend>
-            <input class="sign-up-input" type="text" id="first-name" name="first-name" placeholder="FIRST NAME" required data-name="first-name">
-            <input class="sign-up-input" type="text" id="email" name="email" placeholder="YOUR E-MAL" required data-name="email">
-            <button class="add-me">add me</button>
-         </fieldset>
-      </form>
+         <ul class="footer-navbar">
+            <li><a href="products.html">products</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a class="active" href="contact.html">contact</a></li>
+            <li><a href="terms-conditions.html">terms & conditions</a></li>
+            <li><a href="privacy-policy.html">privacy policy</a></li>
+         </ul>
 
-      <ul class="footer-navbar">
-         <li><a href="products.html">products</a></li>
-         <li><a href="about.html">about</a></li>
-         <li><a class="active" href="contact.html">contact</a></li>
-         <li><a href="terms-conditions.html">terms & conditions</a></li>
-         <li><a href="privacy-policy.html">privacy policy</a></li>
-      </ul>
+         <div class="footer-logo">
+            <a href="index.html"><img src="../resources/haceli-logo/Haceli_logo3.svg" width="150px"></a> 
+         </div> 
 
-      <div class="footer-logo">
-         <a href="index.html"><img src="../resources/haceli-logo/Haceli_logo3.svg" width="150px"></a> 
-      </div> 
+         <h3 class="copyright">Copyright © 2022 Hacéli</h3>
 
-      <h3 class="copyright">Copyright © 2022 Hacéli</h3>
-
-      <div class="icon-contianer">
-         <a href="https://www.facebook.com/profile.php?id=100069243829740"><img src="../resources/icons/facebook.svg" class="icon facebook"></a>
-         <a href="https://www.instagram.com/haceli_store/"><img src="../resources/icons/instagram.svg" class="icon instagram"></a>
-      </div> 
-   </footer>
-
- </body>
-
- </html>
+         <div class="icon-contianer">
+            <a href="https://www.facebook.com/profile.php?id=100069243829740" target="_blank"><img src="../resources/icons/facebook.svg" class="icon facebook"></a>
+            <a href="https://www.instagram.com/haceli_store/" target="_blank"><img src="../resources/icons/instagram.svg" class="icon instagram"></a>
+         </div> 
+      </footer>
+   </body>
+</html>

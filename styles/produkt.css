@@ -75,14 +75,6 @@ body {
   grid-column: 9 / span 4;
   }
 
-.one-half-one {
-  grid-column: 1 / span 6;
-  }
-
-.one-half-two{
-  grid-column: 7 / span 6;
-  }
-
 h1.product-collection {
   color: var(--primary-color);
   font-size: 1.5rem;
